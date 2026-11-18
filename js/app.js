@@ -52,10 +52,18 @@
   onScroll();
 
   if ("IntersectionObserver" in window && sections.length) {
+    var clearTargets = [doc.querySelector(".hero"), doc.getElementById("contact")].filter(Boolean);
+
     var navObserver = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
           if (!entry.isIntersecting) return;
+          if (clearTargets.indexOf(entry.target) !== -1) {
+            navLinks.forEach(function (link) {
+              link.classList.remove("is-active");
+            });
+            return;
+          }
           var match = sections.find(function (item) {
             return item.section === entry.target;
           });
@@ -69,6 +77,9 @@
     );
     sections.forEach(function (item) {
       navObserver.observe(item.section);
+    });
+    clearTargets.forEach(function (target) {
+      navObserver.observe(target);
     });
   }
 
