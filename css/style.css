@@ -3443,3 +3443,29 @@ h3 { font-size: clamp(27px, 2.9vw, 42px); }
   line-height: 1.35;
   color: var(--muted);
 }
+
+/* Project tiles: serif titles and equal thumb sizes */
+.project-title {
+  font-family: var(--serif);
+}
+
+.project-thumbs {
+  justify-content: space-between;
+}
+
+.project-thumbs button {
+  flex: 0 0 calc((100% - 24px) / 5);
+}
+
+/* Contact note directly under the lead */
+.contact__note {
+  margin-top: 12px;
+  padding-top: 0;
+  border-top: 0;
+  color: var(--ink-soft);
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: none;
+}
