@@ -17,6 +17,9 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="preload" as="image" href="assets/img/about-portrait-900.jpg" imagesrcset="assets/img/about-portrait-600.jpg 330w, assets/img/about-portrait-900.jpg 496w" imagesizes="(max-width: 900px) 100vw, 45vw" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/cormorant-garamond-normal-cyrillic.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/manrope-normal-cyrillic.woff2" crossorigin>
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body id="top">
@@ -76,7 +79,7 @@
       </div>
     </div>
     <div class="about-hero__media">
-      <img src="assets/img/about-portrait-900.jpg" srcset="assets/img/about-portrait-600.jpg 330w, assets/img/about-portrait-900.jpg 496w" sizes="(max-width: 900px) 100vw, 45vw" width="496" height="900" alt="Софья, фотограф в Казани, крупный портрет в зелёных очках" loading="lazy" decoding="async" style="--ph:#685a47">
+      <img src="assets/img/about-portrait-900.jpg" srcset="assets/img/about-portrait-600.jpg 330w, assets/img/about-portrait-900.jpg 496w" sizes="(max-width: 900px) 100vw, 45vw" width="496" height="900" alt="Софья, фотограф в Казани, крупный портрет в зелёных очках" loading="eager" fetchpriority="high" decoding="async" style="--ph:#685a47">
     </div>
   </section>
 
