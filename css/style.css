@@ -3247,3 +3247,15 @@ body { font-size: 18px; }
   .about-fact p { font-size: 21px; }
   .about-quote__note { font-size: clamp(24px, 6vw, 28px); }
 }
+
+/* Tighten spacing after the text enlargement */
+
+.intro__body .line + .line { margin-top: 0.35em; }
+.statement-list > span + span { margin-top: 0.35em; }
+.principle p .line + .line { margin-top: 0.2em; }
+.creative-frame .line + .line { margin-top: 0.35em; }
+.about-story__text .line + .line { margin-top: 0.35em; }
+.about-lead + .about-lead { margin-top: 0.2em; }
+.hero__lead .line + .line { margin-top: 0.15em; }
+.family-statement span + span { margin-top: 0.12em; }
+.about-quote__note { margin-top: 10px; }
