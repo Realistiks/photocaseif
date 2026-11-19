@@ -3166,3 +3166,84 @@ body {
   .contact__note { font-size: 11px; }
   .hero__meta { font-size: 11px; }
 }
+
+/* Readability pass 2: more text everywhere, especially supporting copy */
+
+body { font-size: 18px; }
+
+.brand__name { font-size: 32px; }
+.brand__sub { font-size: 10.5px; }
+.nav a { font-size: 13.5px; }
+.header__cta { padding: 12px 22px; font-size: 12.5px; }
+.eyebrow { font-size: 13px; letter-spacing: 0.18em; }
+
+.hero__lead { font-size: clamp(20px, 1.5vw, 23px); }
+.hero__meta { font-size: 13px; }
+.hero__caption { font-size: 12px; }
+
+.btn { min-height: 56px; padding: 16px 30px; font-size: 12.5px; }
+.link-arrow { font-size: 12.5px; }
+
+.principle__num { font-size: 12px; }
+.principle p { font-size: clamp(22px, 1.75vw, 25px); }
+
+.statement-list { font-size: clamp(26px, 2.7vw, 40px); }
+
+.city__meta { font-size: 12.5px; }
+
+.creative-frame { max-width: 1000px; }
+.creative-frame .line { font-size: clamp(24px, 2.2vw, 32px); }
+.creative-frame .creative-line--single {
+  font-size: clamp(18px, 1.85vw, 26px);
+  white-space: nowrap;
+}
+
+.contact__lead { font-size: 20px; }
+.contact__note { font-size: 13px; }
+.channel { font-size: 13.5px; }
+.channel__label { font-size: 12px; }
+.channel__name { font-size: clamp(34px, 3.2vw, 46px); }
+
+.footer__sub { font-size: 10.5px; }
+.footer__nav a,
+.footer__socials a { font-size: 13px; }
+.footer__bottom { font-size: 12.5px; }
+.footer__credit a span { font-size: 13px; }
+
+.mobile-menu__nav a span { font-size: 12px; }
+.mobile-menu__foot { font-size: 13px; }
+
+.about-lead { font-size: clamp(24px, 2.3vw, 32px); }
+.about-story__text .line { font-size: clamp(26px, 2.5vw, 36px); }
+.about-fact__num { font-size: 12px; }
+.about-fact b { font-size: 30px; }
+.about-fact p { font-size: 22px; }
+.about-quote__note { font-size: clamp(24px, 2.3vw, 30px); }
+.about-hero__caption { font-size: 12px; }
+
+.lightbox__count,
+.lightbox__caption { font-size: 13px; }
+.lightbox__hint,
+.lightbox__close { font-size: 12px; }
+
+@media (max-width: 760px) {
+  .eyebrow { font-size: 12px; }
+  .hero__lead { font-size: clamp(19px, 5.2vw, 22px); }
+  .hero__meta { font-size: 12px; }
+  .btn { min-height: 52px; padding: 14px 22px; font-size: 11.5px; }
+  .link-arrow { font-size: 11.5px; }
+  .principle p { font-size: clamp(21px, 5.6vw, 25px); }
+  .statement-list { font-size: clamp(24px, 6vw, 32px); }
+  .creative-frame .line { font-size: clamp(22px, 5.4vw, 26px); }
+  .creative-frame .creative-line--single { font-size: clamp(19px, 5.2vw, 23px); white-space: normal; }
+  .contact__lead { font-size: 19px; }
+  .contact__note { font-size: 12px; }
+  .channel { font-size: 13px; }
+  .footer__nav a,
+  .footer__socials a { font-size: 12px; }
+  .footer__bottom { font-size: 11.5px; }
+  .about-lead { font-size: clamp(22px, 5.8vw, 28px); }
+  .about-story__text .line { font-size: clamp(24px, 6vw, 32px); }
+  .about-fact p { font-size: 21px; }
+  .about-quote__note { font-size: clamp(24px, 6vw, 28px); }
+}
