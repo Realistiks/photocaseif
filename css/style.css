@@ -3470,3 +3470,18 @@ h3 { font-size: clamp(27px, 2.9vw, 42px); }
   letter-spacing: normal;
   text-transform: none;
 }
+
+/* About story: single column with one highlighted phrase */
+.about-story__inner {
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+}
+
+.about-story__highlight {
+  margin-top: 1.4em;
+  font-family: var(--serif);
+  font-size: clamp(30px, 3.4vw, 50px);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--accent);
+}
