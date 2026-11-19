@@ -4,9 +4,9 @@
    ========================================================= */
 
 :root {
-  --bg: #eef0e4;
-  --bg-soft: #e3e7d6;
-  --bg-sand: #d8dec5;
+  --bg: #e7f0dd;
+  --bg-soft: #dfe9d2;
+  --bg-sand: #dae6cc;
   --ink: #1e2a1b;
   --ink-soft: #3d4a36;
   --muted: #57634a;
@@ -17,7 +17,7 @@
   --cream: #f3f1e6;
   --dark: #162016;
   --olive: #4d5b3a;
-  --sage: #dfe4d0;
+  --sage: #e3edd8;
   --khaki: #c9d1b2;
   --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --sans: "Manrope", "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -357,7 +357,7 @@ h3 em {
   align-items: center;
   height: var(--header-h);
   padding: 0 var(--gutter);
-  background: rgba(238, 240, 228, 0.94);
+  background: rgba(231, 240, 221, 0.94);
   border-bottom: 1px solid transparent;
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
@@ -368,7 +368,7 @@ h3 em {
 
 .header.is-scrolled {
   border-bottom-color: var(--line);
-  background: rgba(238, 240, 228, 0.97);
+  background: rgba(231, 240, 221, 0.97);
 }
 
 .brand {
@@ -2707,4 +2707,144 @@ main[id] {
 
 .about-hero__media img {
   object-position: center 18%;
+}
+
+/* =========================================================
+   Light green surfaces - final overrides
+   ========================================================= */
+
+.section--dark,
+.section--olive,
+.contact,
+.about-quote {
+  --ink: #1e2a1b;
+  --ink-soft: #3d4a36;
+  --muted: #57634a;
+  --line: rgba(30, 42, 27, 0.16);
+  --line-strong: rgba(30, 42, 27, 0.34);
+  color: var(--ink);
+}
+
+.section--dark {
+  background: #dfe9d3;
+}
+
+.section--olive {
+  background: #d6e2c6;
+}
+
+.contact {
+  background: #d9e5cb;
+}
+
+.about-quote {
+  background: #dfe9d3;
+}
+
+.section--dark :focus-visible,
+.section--olive :focus-visible,
+.contact :focus-visible,
+.about-quote :focus-visible {
+  outline-color: var(--accent);
+}
+
+/* creative block on a light surface */
+
+.creative-title {
+  color: var(--ink);
+}
+
+.creative-title em {
+  color: var(--accent);
+}
+
+.creative-frame {
+  border-color: var(--line-strong);
+}
+
+.creative-frame .line {
+  color: var(--ink-soft);
+}
+
+.section--dark .btn--light {
+  border-color: var(--line-strong);
+  background: transparent;
+  color: var(--ink);
+}
+
+.section--dark .btn--light:hover {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.section--dark .quote::before,
+.section--olive .quote::before {
+  color: var(--accent);
+}
+
+.section--dark h2 em,
+.section--dark h3 em,
+.section--olive h2 em,
+.section--olive h3 em {
+  color: var(--accent);
+}
+
+/* projects block on a light surface */
+
+.projects-head h2 {
+  color: var(--ink);
+}
+
+.project-card {
+  border-color: var(--line);
+  background: #e9f1de;
+}
+
+/* contact block on a light surface */
+
+.contact h2 em {
+  color: var(--accent);
+}
+
+.contact__lead {
+  color: var(--ink-soft);
+}
+
+.contact__note {
+  color: var(--muted);
+}
+
+.contact .channel:not(.channel--primary):hover {
+  color: var(--accent);
+}
+
+.channel--primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--cream);
+}
+
+.channel--primary:hover {
+  border-color: var(--olive);
+  background: var(--olive);
+  color: var(--cream);
+}
+
+/* about quote block on a light surface */
+
+.about-quote__text {
+  color: var(--ink);
+}
+
+.about-quote__text em {
+  color: var(--accent);
+}
+
+.about-quote__note {
+  color: var(--muted);
+}
+
+.no-break {
+  white-space: nowrap;
 }
