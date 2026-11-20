@@ -3485,3 +3485,12 @@ h3 { font-size: clamp(27px, 2.9vw, 42px); }
   line-height: 1.15;
   color: var(--accent);
 }
+
+.about-story__highlight-en {
+  margin-top: 0.35em;
+  font-family: var(--serif);
+  font-size: clamp(24px, 2.6vw, 38px);
+  font-style: italic;
+  line-height: 1.15;
+  color: var(--accent-soft);
+}
